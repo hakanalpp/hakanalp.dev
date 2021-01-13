@@ -1,15 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import AppRouter from '../src/Screens/Router';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Zula altının bitti diye üzülme. Beni çağır.
-        </p>
-      </header>
+    <div>
+      {' '}
+      <AppRouter />
     </div>
   );
 }
