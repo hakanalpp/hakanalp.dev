@@ -10,29 +10,39 @@ function Home() {
 
   return (
     <div className="w-full h-screen bg-neutral-white">
-      <div className="w-full h-28 bg-dark-green px-20 flex items-center">
-        <button
-          className={
-            isShown0
-              ? 'text-6xl focus:outline-none text-light-green'
-              : 'text-6xl focus:outline-none text-neutral-white'
-          }
-          onMouseEnter={() => setIsShown0(true)}
-          onMouseLeave={() => setIsShown0(false)}>
-          Hakan ALP
-        </button>
-        <button
-          className="focus:outline-none"
-          onMouseEnter={() => setIsShown1(true)}
-          onMouseLeave={() => setIsShown1(false)}>
-          <GitHubLogo className="w-12 h-12 ml-8" fill={isShown1 ? '#9DC88D' : '#E9E9ED'} />
-        </button>
-        <button
-          className="focus:outline-none"
-          onMouseEnter={() => setIsShown2(true)}
-          onMouseLeave={() => setIsShown2(false)}>
-          <LinkedInLogo className="w-12 h-12 ml-6" fill={isShown2 ? '#9DC88D' : '#E9E9ED'} />
-        </button>
+      <div className="w-full h-28 bg-dark-green px-20 flex items-center justify-between">
+        <div>
+          <button
+            className={
+              isShown0
+                ? 'text-6xl focus:outline-none text-light-green'
+                : 'text-6xl focus:outline-none text-neutral-white'
+            }
+            onMouseEnter={() => setIsShown0(true)}
+            onMouseLeave={() => setIsShown0(false)}>
+            Hakan ALP
+          </button>
+        </div>
+        <div className="flex flex-row">
+          <div>
+            <a
+              href="https://www.linkedin.com/in/hakan-alpp/"
+              className="focus:outline-none"
+              onMouseEnter={() => setIsShown1(true)}
+              onMouseLeave={() => setIsShown1(false)}>
+              <GitHubLogo className="w-12 h-12 ml-8" fill={isShown1 ? '#9DC88D' : '#E9E9ED'} />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/hakanalpp"
+              className="focus:outline-none"
+              onMouseEnter={() => setIsShown2(true)}
+              onMouseLeave={() => setIsShown2(false)}>
+              <LinkedInLogo className="w-12 h-12 ml-6" fill={isShown2 ? '#9DC88D' : '#E9E9ED'} />
+            </a>
+          </div>
+        </div>
       </div>
 
       <div className="w-full h-auto bg-light-green flex items-center grid justify-items-center py-20">
@@ -128,7 +138,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full h-16 bg-dark-green flex items-center grid justify-items-center">
+      <div className="absolute bottom-0 w-full h-16 bg-dark-green flex items-center grid justify-items-center">
         <p className="text-neutral-white text-2xl">Copyright © Hakan ALP 2021</p>
       </div>
     </div>
