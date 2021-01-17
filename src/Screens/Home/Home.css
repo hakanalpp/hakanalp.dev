@@ -1,0 +1,11 @@
+.cont {
+  @apply pt-8 pb-12 flex items-center grid justify-items-center;
+}
+
+.body {
+  @apply max-w-5xl divide-x-0 flex flex-row flex-auto p-4;
+}
+
+.paragraph {
+  @apply whitespace-pre-line text-xl flex flex-1;
+}
