@@ -138,7 +138,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 w-full h-16 bg-dark-green flex items-center grid justify-items-center">
+      <div className="fixed bottom-0 w-full h-16 bg-dark-green flex items-center grid justify-items-center">
         <p className="text-neutral-white text-2xl">Copyright © Hakan ALP 2021</p>
       </div>
     </div>
