@@ -1,11 +1,53 @@
 .cont {
-  @apply pt-8 pb-12 flex items-center grid justify-items-center;
+  @apply pt-12 pb-4 flex items-center grid justify-items-center;
 }
 
 .body {
-  @apply max-w-5xl divide-x-0 flex flex-row flex-auto p-4;
+  @apply max-w-5xl divide-x-0 bg-gray-700 flex flex-row flex-auto p-4;
 }
 
 .paragraph {
-  @apply whitespace-pre-line text-xl flex flex-1;
+  @apply whitespace-pre-line flex flex-1 text-gray-200;
+}
+
+.head {
+  @apply text-2xl font-bold text-yellow-500;
+}
+
+.divider {
+  @apply divide-y-2 divide-gray-500 m-2 text-center;
+}
+
+.cDivider {
+  @apply mx-auto pb-2 pt-2;
+  width: 700px;
+}
+
+.input {
+  @apply placeholder-gray-200 placeholder-opacity-50 mx-6 focus:outline-none bg-gray-700;
+}
+
+.inputgap {
+  @apply max-w-5xl bg-gray-700;
+}
+
+.divider {
+  @apply divide-y divide-gray-500 text-center;
+}
+
+@media screen and (max-width: 640px) {
+  .cDivider {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    position: absolute;
+    left: 0px;
+    padding-bot: 5rem;
+    padding-top: 5rem;
+  }
+  .input {
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 }
