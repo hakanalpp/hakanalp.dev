@@ -8,7 +8,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ['Varela Round', 'sans-serif']
+      sans: ['Lato', 'sans-serif'],
+      serif: ['Arvo', 'serif']
     }
   },
   variants: {
