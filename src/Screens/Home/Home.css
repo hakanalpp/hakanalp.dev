@@ -3,15 +3,15 @@
 }
 
 .body {
-  @apply max-w-5xl divide-x-0 bg-gray-700 flex flex-row flex-auto p-4;
+  @apply max-w-5xl space-x-4 bg-gray-700 flex flex-row flex-auto p-4;
 }
 
 .paragraph {
-  @apply whitespace-pre-line flex flex-1 text-gray-200;
+  @apply whitespace-pre-wrap space-y-2 flex flex-1 flex-col text-gray-200;
 }
 
 .head {
-  @apply text-2xl font-bold text-yellow-500;
+  @apply text-2xl font-bold text-yellow-500 uppercase;
 }
 
 .divider {
@@ -53,3 +53,13 @@
     padding-bottom: 0.25rem;
   }
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif;
+}
+
