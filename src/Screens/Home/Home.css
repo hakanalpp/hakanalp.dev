@@ -40,14 +40,16 @@
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     position: absolute;
     left: 0px;
-    padding-bot: 5rem;
-    padding-top: 5rem;
   }
   .input {
     text-align: left;
     position: absolute;
     left: 0px;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+  }
+  .inputgap {
+    padding: 20px;
+  }
+  .divider {
+    padding-bottom: 0.25rem;
   }
 }
