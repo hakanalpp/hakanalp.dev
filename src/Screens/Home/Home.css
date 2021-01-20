@@ -1,9 +1,9 @@
 .cont {
-  @apply pt-12 pb-4 flex items-center grid justify-items-center;
+  @apply pt-12 pb-4 grid justify-items-center;
 }
 
 .body {
-  @apply max-w-5xl space-x-4 bg-gray-700 flex flex-row flex-auto p-4;
+  @apply max-w-5xl space-x-4 bg-gray-700 flex flex-row p-4;
 }
 
 .paragraph {
@@ -19,12 +19,13 @@
 }
 
 .cDivider {
-  @apply mx-auto pb-2 pt-2;
   width: 700px;
+  max-width: 100%;
 }
 
 .input {
-  @apply placeholder-gray-200 placeholder-opacity-50 mx-6 focus:outline-none bg-gray-700;
+  @apply placeholder-gray-100 placeholder-opacity-40 text-neutral-white focus:outline-none bg-gray-700 w-1/2;
+  caret-color: #E9E9ED;
 }
 
 .inputgap {
@@ -35,22 +36,20 @@
   @apply divide-y divide-gray-500 text-center;
 }
 
+.textarea {
+  @apply w-full placeholder-gray-100 placeholder-opacity-40 text-neutral-white bg-gray-700 focus:outline-none;
+  caret-color: #E9E9ED;
+}
+
 @media screen and (max-width: 640px) {
+  .form{
+    @apply w-full;
+  }
   .cDivider {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    position: absolute;
-    left: 0px;
+    @apply w-full;
   }
   .input {
-    text-align: left;
-    position: absolute;
-    left: 0px;
-  }
-  .inputgap {
-    padding: 20px;
-  }
-  .divider {
-    padding-bottom: 0.25rem;
+    @apply w-full leading-10;
   }
 }
 

@@ -84,8 +84,12 @@ function Home() {
             <div className="paragraph pl-4">
               <h2 className="text-yellow-500 text-xl font-bold uppercase">Highlights</h2>
               <ul className="pl-4 list-disc list-inside">
-                <li>Had 3.00 GPA</li>
+                <li>
+                  Went to Germany with Erasmus+ program for a whole year. Travelled 15 different
+                  cities in Europe
+                </li>
                 <li>Competitive Programming enthusiast</li>
+                <li>Had 3.00 GPA</li>
               </ul>
             </div>
           </div>
@@ -94,7 +98,7 @@ function Home() {
 
       <section>
         <div className="cont">
-          <h1 className="head">PROJECTS</h1>
+          <h1 className="head">Interests</h1>
           <div className="divider">
             <div className="mx-auto" style={{ width: '250px' }}></div>
             <div className="mx-auto" style={{ width: '250px' }}></div>
@@ -124,11 +128,11 @@ function Home() {
               <h2 className="text-yellow-500 text-xl font-bold">CURRENT JOB (Deltasmart Tech.)</h2>
               <ul className="pl-4 mb-2 list-disc list-inside">
                 <li>
-                  Developed/Maintained Cross-platform Apps as service for different organized
+                  Developed/Maintained cross-platform Apps as service for different organized
                   industrial zones using React Native.
                 </li>
                 <li>
-                  Developed Cross-platform Apps for school management, school staff and students
+                  Developed cross-platform Apps for school management, school staff and students
                   React Native.
                 </li>
                 <li>
@@ -155,7 +159,7 @@ function Home() {
                   Took astro and landscape photos. Also editing and illustrating using Adobe
                   Softwares.
                 </li>
-                <li>Listen music almost 4 hours every day. Mostly Metal and classical music.</li>
+                <li>Listen music almost 4 hours every day. Mostly metal and classical music.</li>
               </ul>
             </div>
           </div>
@@ -164,37 +168,73 @@ function Home() {
 
       <section ref={contactRef}>
         <div className="cont">
-          <h1 className="head justify-self-center">CONTACT ME</h1>
+          <h1 className="head justify-self-center">Contact Me</h1>
           <div className="divider">
             <div className="mx-auto" style={{ width: '250px' }}></div>
             <div className="mx-auto" style={{ width: '250px' }}></div>
           </div>
-          <p className="text-bold text-yellow-500">!!! This part is under construction !!!</p>
-          <div className="inputgap">
+          <form
+            target="_blank"
+            className="form mt-6"
+            action="https://formsubmit.co/hakana926@gmail.com"
+            method="POST">
+            <div className="inputgap">
+              <div className="divider">
+                <div className="cDivider"></div>
+                <div className="cDivider"></div>
+              </div>
+              <div className="px-6 py-2">
+                <input
+                  type="text"
+                  name="name"
+                  className="form-control input"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+            </div>
+            <div className="inputgap">
+              <div className="divider">
+                <div className="cDivider"></div>
+                <div className="cDivider"></div>
+              </div>
+              <div className="px-6 py-2">
+                <input
+                  type="email"
+                  name="email"
+                  className="form-control input"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+            </div>
+            <div className="inputgap">
+              <div className="divider">
+                <div className="cDivider"></div>
+                <div className="cDivider"></div>
+              </div>
+              <div className="px-6 py-2">
+                <textarea
+                  rows="6"
+                  name="message"
+                  className="form-control textarea"
+                  style={{ resize: 'none' }}
+                  placeholder="Message"
+                  required></textarea>
+              </div>
+            </div>
             <div className="divider">
               <div className="cDivider"></div>
               <div className="cDivider"></div>
             </div>
-            <input className="input justify-self-start" placeholder="E-mail" />
-          </div>
-          <div className="inputgap">
-            <div className="divider">
-              <div className="cDivider"></div>
-              <div className="cDivider"></div>
+            <div className="grid justify-items-end">
+              <button
+                type="submit"
+                className="mr-6 mt-2 text-gray-700 bg-yellow-500 w-20 h-9 rounded-md">
+                Send
+              </button>
             </div>
-            <input className="input justify-self-start" placeholder="Name" />
-          </div>
-          <div className="inputgap">
-            <div className="divider">
-              <div className="cDivider"></div>
-              <div className="cDivider"></div>
-            </div>
-            <input className="input justify-self-start" placeholder="Message" />
-          </div>
-          <div className="divider pt-14">
-            <div className="cDivider"></div>
-            <div className="cDivider"></div>
-          </div>
+          </form>
         </div>
       </section>
 
