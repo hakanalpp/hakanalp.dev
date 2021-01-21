@@ -1,6 +1,7 @@
 # Source code for hakanalp.dev
 
 hakanalp.dev is a responsive personel blog/portfolio website which I built for myself.
+This project is done using ReactJS and Tailwind CSS.
 
 ## Available Scripts
 
