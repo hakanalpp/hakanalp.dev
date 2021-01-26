@@ -1,7 +1,15 @@
-# Source code for hakanalp.dev
+# hakanalp.dev
 
 hakanalp.dev is a responsive personel blog/portfolio website which I built for myself.
-This project is done using ReactJS and Tailwind CSS.
+This project is done using `ReactJS` and `Tailwind CSS`.
+
+## Tech Used
+
+- `React`
+- `Tailwind CSS`
+- `react-router`
+- `eslint`
+- `prettier`
 
 ## Available Scripts
 
@@ -27,4 +35,5 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ## License
 This project is licensed under the mit license.\
-Linkedin and Github icons are gathered from ["fontawesome.com"](https://fontawesome.com/)
+See [license](/LICENSE) of this source code.\
+Linkedin and Github icons are gathered from [fontawesome.com](https://fontawesome.com)
