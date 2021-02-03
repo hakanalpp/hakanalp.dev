@@ -63,8 +63,8 @@ function Home() {
           <div className="body">
             <div className="paragraph">
               <p>
-                I&apos;m a junior year computer engineering student at IZTECH. I&apos;m also a
-                Mobile / Frontend developer located in Izmir. I&apos;m a mobile developer who
+                I&apos;m a junior year computer engineering student at IZTECH. I&apos;m also work as
+                a Mobile/Frontend developer located in Izmir. I&apos;m a mobile developer who
                 develops cross-platform apps using React Native.
               </p>
               <p>I also spend my outsite time on being a fullstack javascript developer.</p>
