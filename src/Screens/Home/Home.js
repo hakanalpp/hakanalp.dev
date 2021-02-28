@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import './Home.css';
 import { ReactComponent as GitHubLogo } from '../../Assets/svg/github-fa.svg';
-import { ReactComponent as LinkedInLogo } from '../../Assets/svg/linkedin-fa.svg';
+import { ReactComponent as 
+        
+        InLogo } from '../../Assets/svg/linkedin-fa.svg';
 import { ReactComponent as MailLogo } from '../../Assets/svg/mail.svg';
 import photo from '../../Assets/image/my_photo.jpeg';
 
@@ -25,12 +27,12 @@ function Home() {
 
           <div className="flex flex-row">
             <a
-              href="https://www.linkedin.com/in/hakan-alpp/"
+              href="https://github.com/hakanalpp"
               className="focus:outline-none text-neutral-white hover:text-yellow-500">
               <GitHubLogo className="w-6 h-6 ml-auto" fill={'currentColor'} />
             </a>
             <a
-              href="https://github.com/hakanalpp"
+              href="https://www.linkedin.com/in/hakan-alpp/"
               className="focus:outline-none text-neutral-white hover:text-yellow-500">
               <LinkedInLogo className="w-6 h-6 ml-3" fill={'currentColor'} />
             </a>
