@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'neutral-white': '#E9E9ED'
+        'main-yellow': '#c9bc7e',
+        'main-dark': '#333133',
+        'neutral-white': '#dbdbdb'
       }
     },
     fontFamily: {
