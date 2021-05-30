@@ -3,7 +3,7 @@ import './App.css';
 import { ReactComponent as GitHubLogo } from './Assets/svg/github-fa.svg';
 import { ReactComponent as LinkedInLogo } from './Assets/svg/linkedin-fa.svg';
 import { ReactComponent as MailLogo } from './Assets/svg/mail.svg';
-import photo from './Assets/image/my_photo.jpeg';
+import photo from './Assets/image/my_photo.png';
 
 function App() {
   const contactRef = useRef();
