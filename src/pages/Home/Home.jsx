@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
-import './App.css';
-import { ReactComponent as GitHubLogo } from './Assets/svg/github-fa.svg';
-import { ReactComponent as LinkedInLogo } from './Assets/svg/linkedin-fa.svg';
-import { ReactComponent as MailLogo } from './Assets/svg/mail.svg';
-import photo from './Assets/image/my_photo.png';
+import '../../App.css';
+import { ReactComponent as GitHubLogo } from '../../Assets/svg/github-fa.svg';
+import { ReactComponent as LinkedInLogo } from '../../Assets/svg/linkedin-fa.svg';
+import { ReactComponent as MailLogo } from '../../Assets/svg/mail.svg';
+import photo from '../../Assets/image/my_photo.png';
 
-function App() {
+function Home() {
   const contactRef = useRef();
 
   const scrollTo = (ref) => {
@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <div className="bg-main-dark">
+    <div className="bg-main-dark h-screen">
       <div className="px-2 lg:px-0 sm:px-3 bg-main-dark flex justify-center">
         <div className="mx-auto flex flex-row justify-between	mt-2" style={{ width: '64rem' }}>
           <h1 className="text-xl focus:outline-none text-neutral-white hover:text-main-yellow cursor-default">
@@ -27,17 +27,18 @@ function App() {
             <a
               href="https://github.com/hakanalpp"
               className="focus:outline-none text-neutral-white hover:text-main-yellow">
-              <GitHubLogo className="w-6 h-6 ml-auto" fill={'currentColor'} />
+              <GitHubLogo className="w-6 h-6 ml-auto" fill="currentColor" />
             </a>
             <a
               href="https://www.linkedin.com/in/hakan-alpp/"
               className="focus:outline-none text-neutral-white hover:text-main-yellow">
-              <LinkedInLogo className="w-6 h-6 ml-3" fill={'currentColor'} />
+              <LinkedInLogo className="w-6 h-6 ml-3" fill="currentColor" />
             </a>
             <button
+              type="button"
               onClick={() => scrollTo(contactRef)}
               className="focus:outline-none h-6 text-neutral-white hover:text-main-yellow">
-              <MailLogo className="w-6 h-6 ml-3" fill={'currentColor'} />
+              <MailLogo className="w-6 h-6 ml-3" fill="currentColor" />
             </button>
           </div>
         </div>
@@ -57,8 +58,8 @@ function App() {
         <div className="cont mt-4">
           <h1 className="head">About Me</h1>
           <div className="divider">
-            <div className="mx-auto" style={{ width: '250px' }}></div>
-            <div className="mx-auto" style={{ width: '250px' }}></div>
+            <div className="mx-auto" style={{ width: '250px' }} />
+            <div className="mx-auto" style={{ width: '250px' }} />
           </div>
           <div className="body">
             <div className="paragraph">
@@ -100,8 +101,8 @@ function App() {
         <div className="cont">
           <h1 className="head">Interests</h1>
           <div className="divider">
-            <div className="mx-auto" style={{ width: '250px' }}></div>
-            <div className="mx-auto" style={{ width: '250px' }}></div>
+            <div className="mx-auto" style={{ width: '250px' }} />
+            <div className="mx-auto" style={{ width: '250px' }} />
           </div>
           <div className="body">
             <div className="paragraph">
@@ -170,8 +171,8 @@ function App() {
         <div className="cont">
           <h1 className="head justify-self-center">Contact Me</h1>
           <div className="divider">
-            <div className="mx-auto" style={{ width: '250px' }}></div>
-            <div className="mx-auto" style={{ width: '250px' }}></div>
+            <div className="mx-auto" style={{ width: '250px' }} />
+            <div className="mx-auto" style={{ width: '250px' }} />
           </div>
           <form
             target="_blank"
@@ -180,8 +181,8 @@ function App() {
             method="POST">
             <div className="inputgap">
               <div className="divider">
-                <div className="cDivider"></div>
-                <div className="cDivider"></div>
+                <div className="cDivider" />
+                <div className="cDivider" />
               </div>
               <div className="px-6 py-2">
                 <input
@@ -195,8 +196,8 @@ function App() {
             </div>
             <div className="inputgap">
               <div className="divider">
-                <div className="cDivider"></div>
-                <div className="cDivider"></div>
+                <div className="cDivider" />
+                <div className="cDivider" />
               </div>
               <div className="px-6 py-2">
                 <input
@@ -210,8 +211,8 @@ function App() {
             </div>
             <div className="inputgap">
               <div className="divider">
-                <div className="cDivider"></div>
-                <div className="cDivider"></div>
+                <div className="cDivider" />
+                <div className="cDivider" />
               </div>
               <div className="px-6 py-2">
                 <textarea
@@ -220,12 +221,13 @@ function App() {
                   className="form-control textarea"
                   style={{ resize: 'none' }}
                   placeholder="Message"
-                  required></textarea>
+                  required
+                />
               </div>
             </div>
             <div className="divider">
-              <div className="cDivider"></div>
-              <div className="cDivider"></div>
+              <div className="cDivider" />
+              <div className="cDivider" />
             </div>
             <div className="grid justify-items-end">
               <button
@@ -245,4 +247,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
