@@ -177,7 +177,7 @@ function Home() {
           <form
             target="_blank"
             className="form mt-6"
-            action="https://formsubmit.co/el/zecuje"
+            action="https://formsubmit.co/6af9e4ef38230987925bb7fc91f30910"
             method="POST">
             <div className="inputgap">
               <div className="divider">
@@ -232,7 +232,7 @@ function Home() {
             <div className="grid justify-items-end">
               <button
                 type="submit"
-                className="mr-6 mt-2 text-main-dark bg-main-yellow w-20 h-9 rounded-md">
+                className="mr-6 mt-2 font-bold border border-main-yellow bg-main-yellow w-20 h-9 rounded-md hover:bg-main-dark hover:border-main-yellow hover:text-main-yellow">
                 Send
               </button>
             </div>
