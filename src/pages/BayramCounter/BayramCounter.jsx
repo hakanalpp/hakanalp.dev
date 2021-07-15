@@ -13,10 +13,10 @@ const BayramDate = ({ second }) => {
   const minute = Math.floor(minuteLeft / 60);
   return (
     <div className="text-white text-center">
-      <p className="text-5xl mb-24">
+      <p className="text-lg sm:text-5xl mb-8 sm:mb-24">
         {day} Gün, {hour} Saat, {minute} Dakika, {second % 60} Saniye until
       </p>
-      <p className="text-6xl"> BAYRAAAAAAAAAAAMMMMMMMMMMMM!!!</p>
+      <p className="font-bold text-3xl sm:text-6xl break-all"> BAYRAAAAAAAAAAAMMMMMMMMMMMM!!!</p>
     </div>
   );
 };
@@ -41,12 +41,12 @@ function BayramCounter() {
   );
 
   return (
-    <div className="bg-main-dark h-screen flex justify-center items-center flex-col">
+    <div className="bg-main-dark w-screen h-screen flex justify-center items-center flex-col overflow-auto p-8">
       <BayramDate second={time} />
       <button
         type="button"
         onClick={play}
-        className="mt-20 p-4 border-2 rounded-md border-neutral-white text-neutral-white hover:border-main-yellow hover:text-main-yellow font-bold text-2xl">
+        className="mt-20 p-4 border-2 rounded-md border-neutral-white text-neutral-white hover:border-main-yellow hover:text-main-yellow font-bold text-lg sm:text-2xl">
         Press HERE to celebrate Bayraaaaaammm earlier
       </button>
     </div>
