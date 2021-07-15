@@ -177,7 +177,7 @@ function Home() {
           <form
             target="_blank"
             className="form mt-6"
-            action="https://formsubmit.co/hakana926@gmail.com"
+            action="https://formsubmit.co/el/zecuje"
             method="POST">
             <div className="inputgap">
               <div className="divider">
