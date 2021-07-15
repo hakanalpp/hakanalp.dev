@@ -64,9 +64,9 @@ function Home() {
           <div className="body">
             <div className="paragraph">
               <p>
-                I&apos;m a junior year computer engineering student at IZTECH. I&apos;m also work as
-                a Mobile/Frontend developer located in Izmir. I&apos;m a mobile developer who
-                develops cross-platform apps using React Native.
+                I&apos;m a senior year computer engineering student at IZTECH. I&apos;m also working
+                as a Frontend developer located in Izmir. I&apos;m a frontend developer who develops
+                cross-platform apps, responsive websites using Javascript technologies.
               </p>
               <p>I also spend my outsite time on being a fullstack javascript developer.</p>
               <p>
@@ -90,7 +90,7 @@ function Home() {
                   cities in Europe
                 </li>
                 <li>Competitive Programming enthusiast</li>
-                <li>Had 3.20 GPA</li>
+                <li>Had 3.48 GPA</li>
               </ul>
             </div>
           </div>
@@ -126,24 +126,27 @@ function Home() {
               </ul>
             </div>
             <div className="paragraph pl-4">
-              <h2 className="text-main-yellow text-xl font-bold">CURRENT JOB (Deltasmart Tech.)</h2>
+              <h2 className="text-main-yellow text-xl font-bold">CURRENT JOB (Prighter)</h2>
               <ul className="pl-4 mb-2 list-disc list-inside">
                 <li>
-                  Developed/Maintained cross-platform Apps as service for different organized
-                  industrial zones using React Native.
+                  Developing a new product from scratch which will be used for the company for
+                  client’s records using React and Flask.
                 </li>
                 <li>
-                  Developed cross-platform Apps for school management, school staff and students
-                  React Native.
+                  Maintaining/improving the main project’s codebase using HTML, Javascript, Alpine
+                  JS and Flask
                 </li>
                 <li>
-                  Mentored a group of 8 junior developers and facilitated their integration into the
-                  team.
+                  Working with an agile team of 10 people. Using a well structured DevOps Lifecycle
+                  tool GitLab
                 </li>
               </ul>
               <h2 className="text-main-yellow text-xl uppercase font-bold ">Outsite Work</h2>
               <ul className="pl-4 list-disc list-inside">
-                <li>This website. It is done by using React and Tailwind CSS.</li>
+                <li>
+                  Leading/Mentoring developers on my previous company (Deltasmart Tech.) on my spare
+                  time.
+                </li>
                 <li>
                   Helping{' '}
                   <a
@@ -151,8 +154,9 @@ function Home() {
                     className="hover:underline text-neutral-white font-semibold">
                     <span>my friend&apos;s project</span>
                   </a>{' '}
-                  about stray animals on its admin panel. I used React and material-ui.
+                  about stray animals on its admin panel. We used React and material-ui.
                 </li>
+                <li>This website. It is done by using React and Tailwind CSS.</li>
               </ul>
               <h2 className="text-main-yellow text-xl uppercase font-bold ">Other Things</h2>
               <ul className="pl-4 list-disc list-inside">
