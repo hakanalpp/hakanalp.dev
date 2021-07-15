@@ -6,13 +6,10 @@ import { ReactComponent as MailLogo } from '../../Assets/svg/mail.svg';
 import photo from '../../Assets/image/my_photo.png';
 
 function Home() {
-  const contactRef = useRef();
+  const contactRef = useRef(null);
 
-  const scrollTo = (ref) => {
-    window.scroll({
-      top: ref.current.offsetTop,
-      behavior: 'smooth'
-    });
+  const scrollToBottom = () => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -36,7 +33,7 @@ function Home() {
             </a>
             <button
               type="button"
-              onClick={() => scrollTo(contactRef)}
+              onClick={() => scrollToBottom()}
               className="focus:outline-none h-6 text-neutral-white hover:text-main-yellow">
               <MailLogo className="w-6 h-6 ml-3" fill="currentColor" />
             </button>
