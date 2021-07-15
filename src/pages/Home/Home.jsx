@@ -16,7 +16,7 @@ function Home() {
   };
 
   return (
-    <div className="bg-main-dark h-screen">
+    <div className="bg-main-dark h-screen w-screen overflow-auto">
       <div className="px-2 lg:px-0 sm:px-3 bg-main-dark flex justify-center">
         <div className="mx-auto flex flex-row justify-between	mt-2" style={{ width: '64rem' }}>
           <h1 className="text-xl focus:outline-none text-neutral-white hover:text-main-yellow cursor-default">
