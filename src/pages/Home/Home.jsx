@@ -1,21 +1,21 @@
-import React, { useRef } from 'react';
-import '../../App.css';
-import { ReactComponent as GitHubLogo } from '../../Assets/svg/github-fa.svg';
-import { ReactComponent as LinkedInLogo } from '../../Assets/svg/linkedin-fa.svg';
-import { ReactComponent as MailLogo } from '../../Assets/svg/mail.svg';
-import photo from '../../Assets/image/my_photo.png';
+import React, { useRef } from "react";
+import "../../App.css";
+import { ReactComponent as GitHubLogo } from "../../Assets/svg/github-fa.svg";
+import { ReactComponent as LinkedInLogo } from "../../Assets/svg/linkedin-fa.svg";
+import { ReactComponent as MailLogo } from "../../Assets/svg/mail.svg";
+import photo from "../../Assets/image/my_photo.png";
 
 function Home() {
   const contactRef = useRef(null);
 
   const scrollToBottom = () => {
-    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+    contactRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <div className="bg-main-dark h-screen w-screen overflow-auto">
       <div className="px-2 lg:px-0 sm:px-3 bg-main-dark flex justify-center">
-        <div className="mx-auto flex flex-row justify-between	mt-2" style={{ width: '64rem' }}>
+        <div className="mx-auto flex flex-row justify-between	mt-2" style={{ width: "64rem" }}>
           <h1 className="text-xl focus:outline-none text-neutral-white hover:text-main-yellow cursor-default">
             Hakan ALP
           </h1>
@@ -23,18 +23,21 @@ function Home() {
           <div className="flex flex-row">
             <a
               href="https://github.com/hakanalpp"
-              className="focus:outline-none text-neutral-white hover:text-main-yellow">
+              className="focus:outline-none text-neutral-white hover:text-main-yellow"
+            >
               <GitHubLogo className="w-6 h-6 ml-auto" fill="currentColor" />
             </a>
             <a
               href="https://www.linkedin.com/in/hakan-alpp/"
-              className="focus:outline-none text-neutral-white hover:text-main-yellow">
+              className="focus:outline-none text-neutral-white hover:text-main-yellow"
+            >
               <LinkedInLogo className="w-6 h-6 ml-3" fill="currentColor" />
             </a>
             <button
               type="button"
               onClick={() => scrollToBottom()}
-              className="focus:outline-none h-6 text-neutral-white hover:text-main-yellow">
+              className="focus:outline-none h-6 text-neutral-white hover:text-main-yellow"
+            >
               <MailLogo className="w-6 h-6 ml-3" fill="currentColor" />
             </button>
           </div>
@@ -48,34 +51,35 @@ function Home() {
           alt="ph"
         />
         <h1 className="text-3xl text-center text-main-yellow mt-8">Hi! I&apos;m Hakan.</h1>
-        <h1 className="text-3xl text-center text-main-yellow mt-2">a Frontend developer.</h1>
+        <h1 className="text-3xl text-center text-main-yellow mt-2">a Full Stack developer.</h1>
       </div>
 
       <section>
         <div className="cont mt-4">
           <h1 className="head">About Me</h1>
           <div className="divider">
-            <div className="mx-auto" style={{ width: '250px' }} />
-            <div className="mx-auto" style={{ width: '250px' }} />
+            <div className="mx-auto" style={{ width: "250px" }} />
+            <div className="mx-auto" style={{ width: "250px" }} />
           </div>
           <div className="body">
             <div className="paragraph">
               <p>
                 I&apos;m a senior year computer engineering student at IZTECH. I&apos;m also working
-                as a Frontend developer located in Izmir. I&apos;m a frontend developer who develops
-                cross-platform apps, responsive websites using Javascript technologies.
+                as a Full Stack developer. I&apos;m a developer who develops Web applications and
+                backend technologies using Javascript and Python technologies.
               </p>
-              <p>I also spend my outsite time on being a fullstack javascript developer.</p>
+              <p>I also spend my outsite time on Computer Vision & Graphics field.</p>
               <p>
-                I&apos;m always interested in becoming a better software developer, and working with
-                good people as a team.
+                I&apos;m always interested in becoming better, and working with good people as a
+                team.
               </p>
               <p>
                 <a
                   className="text-main-yellow font-semibold hover:underline"
-                  href="https://www.linkedin.com/in/hakan-alpp/">
+                  href="https://www.linkedin.com/in/hakan-alpp/"
+                >
                   See my LinkedIn profile
-                </a>{' '}
+                </a>{" "}
                 for more career details.
               </p>
             </div>
@@ -87,7 +91,7 @@ function Home() {
                   cities in Europe
                 </li>
                 <li>Competitive Programming enthusiast</li>
-                <li>Had 3.48 GPA</li>
+                <li>Had 3.54 GPA</li>
               </ul>
             </div>
           </div>
@@ -98,27 +102,27 @@ function Home() {
         <div className="cont">
           <h1 className="head">Interests</h1>
           <div className="divider">
-            <div className="mx-auto" style={{ width: '250px' }} />
-            <div className="mx-auto" style={{ width: '250px' }} />
+            <div className="mx-auto" style={{ width: "250px" }} />
+            <div className="mx-auto" style={{ width: "250px" }} />
           </div>
           <div className="body">
             <div className="paragraph">
               <p className="text-xl font-bold">My personal interests include:</p>
               <ul className="pl-4 list-disc list-inside space-y-2">
                 <li>
-                  <span className="font-bold">Software development.</span> Developing things was
-                  always exciting for me. I&apos;m interested in new backend and frontend
-                  technologies. (Mostly using Javascript)
+                  <span className="font-bold">Software development.</span>
+                  Developing things was always exciting for me. I&apos;m interested in new backend
+                  and frontend technologies. (Mostly using Javascript)
                 </li>
                 <li>
-                  <span className="font-bold">Visual Computing.</span> I got Image processing and
+                  <span className="font-bold">Visual Computing.</span>I got Image processing and
                   Computer Graphics courses both on my school and Erasmus. Those fields are very fun
                   and challenging for me.
                 </li>
                 <li>
-                  <span className="font-bold">Creating things in general.</span> I&apos;ve always
-                  been into creating stuff. When I was teenager I tried making games, maps and some
-                  illustration on photoshop.
+                  <span className="font-bold">Creating things in general.</span>
+                  I&apos;ve always been into creating stuff. When I was teenager I tried making
+                  games, maps and some illustration on photoshop.
                 </li>
               </ul>
             </div>
@@ -130,28 +134,31 @@ function Home() {
                   client’s records using React and Flask.
                 </li>
                 <li>
-                  Maintaining/improving the main project’s codebase using HTML, Javascript, Alpine
-                  JS and Flask
+                  Maintaining/improving the main project’s codebase using Jinja2, Vanilla J, Flask
+                  and SQLAlchemy
                 </li>
-                <li>
-                  Working with an agile team of 10 people. Using a well structured DevOps Lifecycle
-                  tool GitLab
-                </li>
+                <li>Writing tests, and scripts using Python(pytest) and Bash</li>
               </ul>
               <h2 className="text-main-yellow text-xl uppercase font-bold ">Outsite Work</h2>
               <ul className="pl-4 list-disc list-inside">
                 <li>
-                  Leading/Mentoring developers on my previous company (Deltasmart Tech.) on my spare
-                  time.
+                  Working on wide-area mapping and a WebGL based viewer as a graduation project. The
+                  demo can be found at{" "}
+                  <a
+                    href="https://rodones.vercel.app/"
+                    className="hover:underline text-neutral-white font-semibold"
+                  >
+                    <span>rodones.vercel.app</span>
+                  </a>{" "}
                 </li>
                 <li>
-                  Helping{' '}
+                  Working on{" "}
                   <a
-                    href="http://helpimal.com/"
-                    className="hover:underline text-neutral-white font-semibold">
-                    <span>my friend&apos;s project</span>
-                  </a>{' '}
-                  about stray animals on its admin panel. We used React and material-ui.
+                    href="https://github.com/hakanalpp/python-raytracer-practises"
+                    className="hover:underline text-neutral-white font-semibold"
+                  >
+                    <span> Ray tracing using Python</span>
+                  </a>{" "}
                 </li>
                 <li>This website. It is done by using React and Tailwind CSS.</li>
               </ul>
@@ -172,14 +179,15 @@ function Home() {
         <div className="cont">
           <h1 className="head justify-self-center">Contact Me</h1>
           <div className="divider">
-            <div className="mx-auto" style={{ width: '250px' }} />
-            <div className="mx-auto" style={{ width: '250px' }} />
+            <div className="mx-auto" style={{ width: "250px" }} />
+            <div className="mx-auto" style={{ width: "250px" }} />
           </div>
           <form
             target="_blank"
             className="form mt-6"
             action="https://formsubmit.co/6af9e4ef38230987925bb7fc91f30910"
-            method="POST">
+            method="POST"
+          >
             <div className="inputgap">
               <div className="divider">
                 <div className="cDivider" />
@@ -220,7 +228,7 @@ function Home() {
                   rows="6"
                   name="message"
                   className="form-control textarea"
-                  style={{ resize: 'none' }}
+                  style={{ resize: "none" }}
                   placeholder="Message"
                   required
                 />
@@ -233,7 +241,8 @@ function Home() {
             <div className="grid justify-items-end">
               <button
                 type="submit"
-                className="mr-6 mt-2 font-bold border border-main-yellow bg-main-yellow w-20 h-9 rounded-md hover:bg-main-dark hover:border-main-yellow hover:text-main-yellow">
+                className="mr-6 mt-2 font-bold border border-main-yellow bg-main-yellow w-20 h-9 rounded-md hover:bg-main-dark hover:border-main-yellow hover:text-main-yellow"
+              >
                 Send
               </button>
             </div>
