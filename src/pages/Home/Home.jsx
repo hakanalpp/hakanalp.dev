@@ -145,7 +145,7 @@ function Home() {
                   Working on wide-area mapping and a WebGL based viewer as a graduation project. The
                   demo can be found at{" "}
                   <a
-                    href="rodones.app"
+                    href="https://rodones.app"
                     className="hover:underline text-neutral-white font-semibold"
                   >
                     <span>rodones.app</span>
