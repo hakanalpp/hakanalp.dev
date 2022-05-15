@@ -145,10 +145,10 @@ function Home() {
                   Working on wide-area mapping and a WebGL based viewer as a graduation project. The
                   demo can be found at{" "}
                   <a
-                    href="https://rodones.vercel.app/"
+                    href="rodones.app"
                     className="hover:underline text-neutral-white font-semibold"
                   >
-                    <span>rodones.vercel.app</span>
+                    <span>rodones.app</span>
                   </a>{" "}
                 </li>
                 <li>
